@@ -1,0 +1,47 @@
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitsample.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git add *
+
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git commit -m "sample file added"
+[main (root-commit) baee51b] sample file added
+ 1 file changed, 130 insertions(+)
+ create mode 100644 gitsample.txt
+
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git push
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git push --set-upstream origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.17 KiB | 597.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/VSHASHANKR/vmtwsample.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+shash@Shashank MINGW64 /f/Practice/git_practice (main)
+$ git push
+Everything up-to-date
